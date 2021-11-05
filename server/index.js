@@ -13,7 +13,6 @@ app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 app.use('/posts', postRoutes);
 
-// const CONNECTION_URL ='mongodb+srv://Kushagra:Nikeaddidas%401@cluster0.9mx84.mongodb.net/Memories?retryWrites=true&w=majority';
 const PORT = process.env.PORT || 5000;
 
 app.use((req, res, next) => {
